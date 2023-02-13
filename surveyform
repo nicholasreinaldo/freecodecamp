@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title> Survey Kepuasan Exhibitor Comic Frontier 16 </title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Kepuasan Exhibitor Comic Frontier 16</h1>
+    <p id="description">Hai! Terima kasih sudah meluangkan waktu anda untuk membantu kami mengembangkan Comifuro</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Nama: <input id="name" type="text" required placeholder="(Boleh nama asli / nama artist)"/></label>
+        <label id="email-label">E-mail: <input id="email" type="email" required placeholder="Silahkan masukkan e-mail anda)"/></label>
+        <label id="number-label">Umur: <input id="number" type="number" min="13" max="100" required placeholder="Umur"/></label>
+        <label id="circlename-label">Nomor & Nama Circle: <input id="circlename" type="text" required placeholder="Contoh: C-06a Arvest"/></label>
+        <label for="dropdown">Sewa Booth:<select id="dropdown" name="dropdown">
+          <option value="">(Pilih jumlah booth dan durasi sewa)</option>
+          <option value="1day-2booth">1 Hari, 1 Booth</option>
+          <option value="2day-2booth">1 Hari, 2 Booth</option>    
+          <option value="2day-1booth">2 Hari, 1 Booth</option>
+          <option value="2day-2booth">2 Hari, 2 Booth</option>
+          <option value="premiumbooth">Booth Premium</option>
+        </select>
+      </label>
+      <p class="favourite"> Sudah berapa kali anda menyewa booth di Comifuro?</p>
+      <label for="1"><input id="1" type="radio" name="rating" value="rate1" class="inline"/> 1 kali </label>
+      <label for="2"><input id="2" type="radio" name="rating" value="rate2" class="inline"/> 2 kali </label>
+      <label for="2"><input id="2" type="radio" name="rating" value="rate2" class="inline"/> Lebih dari 2 kali </label>  
+      <p class="favourite"> Apa yang anda sukai saat menyewa Booth Comifuro?</p>
+      <label for="price"><input id="price" type="checkbox" name="interest" class="inline" value="price"> Harga </label>
+      <label for="location"><input id="location" type="checkbox" name="interest" class="inline" value="location"> Lokasi </label>
+      <label for="visitors"><input id="visitors" type="checkbox" name="interest" class="inline" value="visitors"> Jumlah Pengunjung </label>
+      </fieldset>
+      <fieldset>
+      <label for="suggestion">Kritik dan Saran lainnya 
+        <textarea id="suggestion" name="suggestion" rows="3" cols="40" placeholder="(Silahkan tuliskan pendapat anda dan apa yang bisa kami kembangkan dari CF kali ini!)"></textarea>
+      </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+<html>
