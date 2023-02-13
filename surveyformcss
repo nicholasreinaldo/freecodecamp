@@ -1,0 +1,96 @@
+html {
+  height:100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: white;
+  color: #203a4d;
+  font-family: sans-serif;
+  font-size: 16px;
+  background: url(https://pbs.twimg.com/media/Fn3O5ZlaEAIHP_t?format=jpg&name=large) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  margin: 1em auto;
+  margin-bottom: 5px;
+  text-align: center;
+  color: white;
+  width: 750px
+}
+
+p {
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 7px;
+  color: white;
+}
+
+p.favourite {
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 2px;
+}
+
+fieldset {
+  background-color: #346e85;
+}
+
+form {
+  width: 80vw;
+  max-width: 600px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+  color: white;
+}
+
+fieldset {
+  padding: 30px;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+  font-size: 10px;
+}
+
+label {
+  display: block;
+  margin: 0 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 10px 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  border: 1px solid;
+  color: #ffffff;
+}
+
+
+input[type="submit"] {
+  display: block;
+  width: 40%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: white;
+  border-color: black;
+  color: #3b3b4f;
+  min-width: 300px;
+}
