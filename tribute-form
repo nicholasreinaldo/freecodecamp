@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yoshie Shiratori</title>
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+  <body>
+    <header>
+      <h1 id="title">Yoshie Shiratori</h1>
+    </header>
+    <main id="main">
+      <title>Yoshie Shiratori</title>
+        <div id="img-div">
+          <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/%E7%B6%B2%E8%B5%B0%E7%9B%A3%E7%8D%84%E8%84%B1%E7%8D%84%E5%86%8D%E7%8F%BE%E3%82%B7%E3%83%BC%E3%83%B3.JPG/800px-%E7%B6%B2%E8%B5%B0%E7%9B%A3%E7%8D%84%E8%84%B1%E7%8D%84%E5%86%8D%E7%8F%BE%E3%82%B7%E3%83%BC%E3%83%B3.JPG">
+          <div id="img-caption">
+          <p>Replica of Shiratori's escape from Abashiri Prison at the Abashiri Prison Museum.</p>
+        </div>
+      </div>
+      <div id="tribute-info">
+        <p> Here's a timeline of Shiratori's life: </p>
+        <p> Find out more about his great story at his <a id="tribute-link" href="https://en.wikipedia.org/wiki/Yoshie_Shiratori" target="_blank">Wikipedia entry</a> and <a id="" href=https://www.breakingasia.com/japan/yoshie-shiratori-the-incredible-story-of-a-man-no-prison-could-hold/>Breaking Asia news entry</a></p>
+      </div>
+    </main>
+    <footer>
+    </footer>
+  </body>
+</html>
