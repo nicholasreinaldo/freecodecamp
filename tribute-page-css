@@ -1,3 +1,37 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+.frame {
+  border: 10px solid #ecd7c6;
+}
+
+.canvas {
+  border: 20px solid  white;
+  border-radius: 9px;
+}
+
+header {
+  text-align: center;
+  margin-top: 40px;
+}
+
+body {
+  color: #1b1b32;
+  font-family: Helvetica;
+  margin: 0;
+  font-size: 18px
+  border: 10px sold white;
+}
+
+#img-div {
+  background-color: white;
+  border: 20px solid #ecd7c6;
+  padding: 10px
+}
+
 #image {
   max-width: 100%;
   height: auto;
@@ -5,5 +39,36 @@
 
 img {
   display: block;
-  margin: 0 auto;
+  margin: 30px auto;
+  margin-bottom: 10px;
+  background-color: #d9d9d9;
+}
+
+#image-caption {
+  text-align: center;
+  border-top: 0;
+  max-width: 80%;
+  margin: 0 auto 20px;
+}
+
+.tribute-timeline {
+  width: 80%;
+  margin: 0 auto 10px auto;
+  max-width: 600px;
+}
+
+li {
+  margin: 15px;
+}
+
+#tribute-info  {
+  text-align: center;
+}
+
+.tribute-timeline {
+  text-align: left;
+}
+
+#tribute-reference {
+  margin-top: 40px;
 }
