@@ -17,7 +17,7 @@
     <main id="main">
       <title>Yoshie Shiratori</title>
         <div id="img-div">
-          <img id="image" src="https://www.breakingasia.com/wp-content/uploads/Abashiri-Prison-Museum-%C2%A9Yusuke-Umezawa.jpg">
+          <img id="image" src="https://www.breakingasia.com/wp-content/uploads/Abashiri-Prison-Museum-%C2%A9Yusuke-Umezawa.jpg" alt="Abashiri prison museum photo">
           <div id="img-caption">
             <p id="image-caption">Replica of Shiratori's escape from Abashiri Prison at the Abashiri Prison Museum.</p>
           </div>
