@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Documentation Page</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>
+        <h1>Introduction</h1>
+        <p></p>
+        <p></p>
+      </header>
+    </section>
+    <section class="main-section" id="What_you_should_already_know">
+      <header>
+        <h1>What you should already know</h1>
+        <p></p>
+        <p></p>
+        <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        </ul> 
+      </header>
+    </section>
+    <section class="main-section" id="Adding_CSS_to_document">
+      <header>
+        <h1>Adding CSS to document</h1>
+        <p></p>
+        <p></p>
+        <code></code>
+      </header>
+    </section>
+    <section class="main-section" id="Selector">
+      <header>
+        <h1>Selector</h1>
+        <p></p>
+        <p></p>
+        <code></code>
+        <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        </ul> 
+      </header>
+    </section>
+    <section class="main-section" id="Properties_and_values">
+      <header>
+        <h1>Properties and values</h1>
+        <p></p>
+        <p></p>
+        <code></code>
+      </header>
+    </section>
+    <section class="main-section" id="Function">
+      <header>
+        <h1>Function</h1>
+        <p></p>
+        <p></p>
+        <code></code>
+      </header>
+    </section>
+    <section class="main-section" id="@rules">
+      <header>
+        <h1>@rules</h1>
+        <p></p>
+        <p></p>
+        <code></code>
+      </header>
+    </section>
+    <section class="main-section" id="Shorthands">
+      <header>
+        <h1>Shorthands</h1>
+        <p></p>
+        <p></p>
+      </header>
+    </section>
+    <section class="main-section" id="Comments">
+      <header>
+        <h1>Comments</h1>
+        <p></p>
+        <p></p>
+        <code></code>
+      </header>
+    </section>
+    <section class="main-section" id="White_space">
+      <header>
+        <h1>White space</h1>
+        <p></p>
+        <p></p>
+      </header>
+    </section>
+    <nav id="navbar">
+      <header>
+      <ul class="navbutt">
+        <li class="nav-list"><a class="nav-link" href="#Introduction">Introduction</li>
+        <li class="nav-list"><a class="nav-link" href="#What_you_should_already_know">What you should already know</li>
+        <li class="nav-list"><a class="nav-link" href="#Adding_CSS_to_document">Adding CSS to Document</li>
+        <li class="nav-list"><a class="nav-link" href="#Selector">Selector</li>
+        <li class="nav-list"><a class="nav-link" href="#Properties_and_values">Properties and values</li>
+        <li class="nav-list"><a class="nav-link" href="#Function">Function</li>
+        <li class="nav-list"><a class="nav-link" href="#@rules">@rules</li>
+        <li class="nav-list"><a class="nav-link" href="#Shorthands">Shorthands</li>
+        <li class="nav-list"><a class="nav-link" href="#Comments">Comments</li>
+        <li class="nav-list"><a class="nav-link" href="#White_space">White space</li>
+      </ul>
+      </header>
+    </nav>
+  </main>
+</body>
+</html>
