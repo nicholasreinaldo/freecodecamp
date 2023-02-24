@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Documentation Page</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <article>
+        <p>Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.</p>
+        <p>CSS (Cascading Style Sheets) is used to style and lay out web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features.</p>
+      </article>
+    </section>
+    <section class="main-section" id="What_you_should_already_know">
+      <header>What you should already know</header>  
+      <article>
+        <p>This guide assumes you have the following basic background:</p>
+        <p></p>
+        <ul>
+        <li>Basic familiarity with using computers and using the Web passively (i.e. looking at it, consuming the content.) </li>
+        <li>A basic work environment set up, as detailed in Installing basic software, and an understanding of how to create and manage files.</li>
+        <li>Basic familiarity with HTML.</li>
+        </ul> 
+      </article>
+    </section>
+    <section class="main-section" id="Adding_CSS_to_document">
+      <header>Adding CSS to document</header>
+      <article>
+        <p>The very first thing we need to do is to tell the HTML document that we have some CSS rules we want it to use. There are three different ways to apply CSS to an HTML document that you'll commonly come across, however, for now, we will look at the most usual and useful way of doing so — linking CSS from the head of your document.</p>
+
+        <p>Create a file in the same folder as your HTML document and save it as <code>styles.css.</code> The <code>.css</code> extension shows that this is a CSS file.</p>
+
+        <p>To link <code>styles.css</code> to <code>index.html</code>, add the following line somewhere inside the <code>< head ></code> of the HTML document:</p>
+        <code class="bar">
+          < link rel="stylesheet" href="styles.css" / > 
+        </code>
+        <p></p>
+        <code></code>
+      </article>
+    </section>
+    <section class="main-section" id="Selector">
+      <header>Selector</header>
+      <article>
+        <p>In CSS, selectors are used to target the HTML elements on our web pages that we want to style. There are a wide variety of CSS selectors available, allowing for fine-grained precision when selecting elements to style. In this article and its sub-articles we'll run through the different types in great detail, seeing how they work.</p>
+        <p>A CSS selector is the first part of a CSS Rule. It is a pattern of elements and other terms that tell the browser which HTML elements should be selected to have the CSS property values inside the rule applied to them. The element or elements which are selected by the selector are referred to as the subject of the selector.</p>
+        <img src="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/selector.png"></img>
+      </article>     
+    </section>
+    <section class="main-section" id="Properties_and_values">
+      <header>Properties and values</header>
+      <article>
+        <p>At its most basic level, CSS consists of two components:</p>
+        <ul>
+  <li><b>Properties:</b> These are human-readable identifiers that indicate which stylistic features you want to modify. For example, <code>font-size</code>, <code>width</code>, <code>background-color.</code></li>
+        <li><b> Values: </b> Each property is assigned a value. This value indicates how to style the property.</li>
+        </ul>
+        <p>The example below highlights a single property and value. The property name is color and the value is blue.</p>
+        <img src="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_is_structured/declaration.png" alt="Properties and value example 1">
+        <p>When a property is paired with a value, this pairing is called a CSS declaration. CSS declarations are found within CSS Declaration Blocks. In the example below, highlighting identifies the CSS declaration block.</p>
+        <img src="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_is_structured/declaration-block.png" alt="Properties and value example 2">
+        <p>Finally, CSS declaration blocks are paired with selectors to produce CSS rulesets (or CSS rules). The example below contains two rules: one for the <code>h1</code> selector and one for the <code>p</code> selector. The colored highlighting identifies the <code>h1</code> rule.</p>
+        <img src="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_is_structured/rules.png" alt="Properties and value examples 3">
+        <p>Setting CSS properties to specific values is the primary way of defining layout and styling for a document. The CSS engine calculates which declarations apply to every single element of a page. <br></br> CSS properties and values are case-insensitive. The property and value in a property-value pair are separated by a colon (<code>:</code>).</p>
+      </article>  
+    </section>
+    <section class="main-section" id="Function">
+      <header>Function</header>
+      <article>
+        <p>While most values are relatively simple keywords or numeric values, there are some values that take the form of a function.</p>
+        <p>An example would be the calc() function, which can do simple math within CSS:</p>
+        <code class="bar"> < div class="outer" >< div class="box" > The inner box is 90% - 30px.
+</code> <br></br>
+        <code class="bar"> .outer {
+  border: 5px solid black;
+}
+
+.box {
+  padding: 10px;
+  width: calc(90% - 30px);
+  background-color: rebeccapurple;
+  color: white;
+} 
+</code>
+      </article>
+    </section>
+    <section class="main-section" id="@rules">
+      <header>@rules</header>
+      <article>
+        <p>CSS @rules (pronounced "at-rules") provide instruction for what CSS should perform or how it should behave. Some @rules are simple with just a keyword and a value. For example, @import imports a stylesheet into another CSS stylesheet:</p>
+        <code class="bar">@import "styles2.css";</code>
+        <p>One common @rule that you are likely to encounter is @media, which is used to create media queries. Media queries use conditional logic for applying CSS styling.
+        <br></br>
+In the example below, the stylesheet defines a default pink background for the <code>< body ></code> element. However, a media query follows that defines a blue background if the browser viewport is wider than 30em.</p>
+        <code class="bar">body {
+  background-color: pink;
+}
+
+@media (min-width: 30em) {
+  body {
+    background-color: blue;
+  }
+}
+</code>
+      </article>
+    </section>
+    <section class="main-section" id="Shorthands">
+      <header>Shorthands</header>
+      <article>
+        <p>Some properties like font, background, padding, border, and margin are called shorthand properties. This is because shorthand properties set several values in a single line.<br>For example, this one line of code:</p>
+        <code class="bar">/* In 4-value shorthands like padding and margin, the values are applied in the order top, right, bottom, left (clockwise from the top). There are also other shorthand types, for example 2-value shorthands, which set padding/margin for top/bottom, then left/right */
+<br>padding: 10px 15px 15px 5px;</code>
+        <p>is equivalent to these four lines of code:
+</p>
+<code class="bar">padding-top: 10px;
+padding-right: 15px;
+padding-bottom: 15px;
+padding-left: 5px;</code>
+<p>This one line:
+</p>
+<code class="bar">background: red url(bg-graphic.png) 10px 10px repeat-x fixed;</code>
+<p>is equivalent to these five lines:
+</p>        
+<code class="bar">background-color: red;
+background-image: url(bg-graphic.png);
+background-position: 10px 10px;
+background-repeat: repeat-x;
+background-attachment: fixed;</code>
+      </article>
+    </section>
+    <section class="main-section" id="Comments">
+      <header>Comments</header>
+      <article>
+        <p>As with any coding work, it is best practice to write comments along with CSS. This helps you to remember how the code works as you come back later for fixes or enhancement. It also helps others understand the code.</p>
+        <p>CSS comments begin with <code>/*</code> and end with <code>*/</code>. In the example below, comments mark the start of distinct sections of code. This helps to navigate the codebase as it gets larger. With this kind of commenting in place, searching for comments in your code editor becomes a way to efficiently find a section of code.</p>
+        <code class="bar">/* Handle basic element styling */
+/* -------------------------------------------------------------------------------------------- */
+body {
+  font: 1em/150% Helvetica, Arial, sans-serif;
+  padding: 1em;
+  margin: 0 auto;
+  max-width: 33em;
+}
+
+@media (min-width: 70em) {
+  /* Increase the global font size on larger screens or windows
+     for better readability */
+  body {
+    font-size: 130%;
+  }
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+/* Handle specific elements nested in the DOM */
+div p,
+#id:first-line {
+  background-color: red;
+  border-radius: 3px;
+}
+
+div p {
+  margin: 0;
+  padding: 1em;
+}
+
+div p + p {
+  padding-top: 0;
+}</code>
+      </article>
+    </section>
+    <section class="main-section" id="White_space">
+      <header>White space</header>
+      <article>
+        <p>White space means actual spaces, tabs and new lines. Just as browsers ignore white space in HTML, browsers ignore white space inside CSS. The value of white space is how it can improve readability.</p>
+        <p>In the example below, each declaration (and rule start/end) has its own line. This is arguably a good way to write CSS. It makes it easier to maintain and understand CSS.</p>
+        <code class="bar">body {
+  font: 1em/150% Helvetica, Arial, sans-serif;
+  padding: 1em;
+  margin: 0 auto;
+  max-width: 33em;
+}
+
+@media (min-width: 70em) {
+  body {
+    font-size: 130%;
+  }
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+div p,
+#id:first-line {
+  background-color: red;
+  border-radius: 3px;
+}
+
+div p {
+  margin: 0;
+  padding: 1em;
+}
+
+div p + p {
+  padding-top: 0;
+}</code>
+<p>The next example shows the equivalent CSS in a more compressed format. Although the two examples work the same, the one below is more difficult to read.</p>
+<code class="bar">
+  body {font: 1em/150% Helvetica, Arial, sans-serif; padding: 1em; margin: 0 auto; max-width: 33em;}
+@media (min-width: 70em) { body { font-size: 130%;}}
+
+h1 {font-size: 1.5em;}
+
+div p, #id:first-line {background-color: red; border-radius: 3px;}
+div p {margin: 0; padding: 1em;}
+div p + p {padding-top: 0;}
+</code>
+      </article>
+    </section>
+    <section class="main-section" id="Reference">
+      <header>Reference</header>
+      <article>
+        <p>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN Web Docs</a></p>
+      </article>
+    </section>
+    <nav id="navbar">
+    <header id="nav-header">
+      <ul class="nav-side">
+        <li class="nav-title">CSS Documentation</li>
+        <li class="nav-list"><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li class="nav-list"><a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li>
+        <li class="nav-list"><a class="nav-link" href="#Adding_CSS_to_document">Adding CSS to Document</a></li>
+        <li class="nav-list"><a class="nav-link" href="#Selector">Selector</a></li>
+        <li class="nav-list"><a class="nav-link" href="#Properties_and_values">Properties and values</a></li>
+        <li class="nav-list"><a class="nav-link" href="#Function">Function</a></li>
+        <li class="nav-list"><a class="nav-link" href="#@rules">@rules</a></li>
+        <li class="nav-list"><a class="nav-link" href="#Shorthands">Shorthands</a></li>
+        <li class="nav-list"><a class="nav-link" href="#Comments">Comments</a></li>
+        <li class="nav-list"><a class="nav-link" href="#White_space">White space</a></li>
+        <li class="nav-list"><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+  </header>
+  </main>
+</body>
+</html>
