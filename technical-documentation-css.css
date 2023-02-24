@@ -1,0 +1,105 @@
+/* This enable smooth scrolling */
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+html {
+  background-color: #Eff8fb;
+}
+
+/* Sets the default style for body (margin and padding for navigation) */
+body {
+  padding: 0;
+  margin: 0;
+  padding-left: 10px;
+  margin-top: 30px;
+  margin-left: 280px;
+  font-family: Helvetica;
+}
+
+/* Add padding to whole document */
+#main-doc {
+  padding: 20px;
+  padding-top: 1px;
+}
+
+header {
+  font-size: 175%;
+  font-weight: bold;  
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+article {
+  margin-left: 20px;
+}
+
+
+section article {
+  margin: 15px;
+}
+
+code {
+  background-color: #D5dfe7;
+}
+
+code.bar{
+  width: 80%;
+  padding: 15px;
+  margin-left: 10px;
+  display: block;
+  text-align: left;
+  white-space: pre-wrap;
+  position: relative;
+}
+
+/* Navigation styling */
+#nav-header {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  min-width: 270px;
+  width: 280px;
+  height: 100%;
+  border-right: solid;
+  border-color: black;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar a{
+  color: black;
+  text-decoration: none;
+}
+
+#navbar a:hover{
+  background-color: #C5D6DB;
+}
+
+.nav-list {
+  padding: 10px;
+  padding-right: 15px;
+  border-top: 2px solid black;
+  list-style-type: none;
+}
+
+.nav-side {
+  padding:0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.nav-title {
+  font-size: 150%;
+  padding: 20px;
+  font-weight: bold;
+}
