@@ -47,14 +47,14 @@ nav > ul {
 
 /* Sets up so Header Image will always fit the screen when zoomed in */
 
-@media only screen (max-width: 550px) {
+@media only screen and (max-width: 550px) {
   #header-img {
     width: 100%;
   } 
 }
 
 /* Sets up so Navigation button will disappear when zoomed in */
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   header {
     flex-wrap: wrap;
   }
@@ -171,7 +171,7 @@ input[type='submit']:hover {
   margin: 50px;
 }
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   #video {
     width: 75%;
   }
