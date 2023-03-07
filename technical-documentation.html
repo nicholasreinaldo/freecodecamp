@@ -34,9 +34,8 @@
 
         <p>Create a file in the same folder as your HTML document and save it as <code>styles.css.</code> The <code>.css</code> extension shows that this is a CSS file.</p>
 
-        <p>To link <code>styles.css</code> to <code>index.html</code>, add the following line somewhere inside the <code>< head ></code> of the HTML document:</p>
-        <code class="bar">
-          < link rel="stylesheet" href="styles.css" / > 
+        <p>To link <code>styles.css</code> to <code>index.html</code>, add the following line somewhere inside the <code>&lt;head&gt;</code> of the HTML document:</p>
+        <code class="bar">&lt;link rel="stylesheet" href="styles.css"&gt; 
         </code>
         <p></p>
         <code></code>
@@ -47,7 +46,7 @@
       <article>
         <p>In CSS, selectors are used to target the HTML elements on our web pages that we want to style. There are a wide variety of CSS selectors available, allowing for fine-grained precision when selecting elements to style. In this article and its sub-articles we'll run through the different types in great detail, seeing how they work.</p>
         <p>A CSS selector is the first part of a CSS Rule. It is a pattern of elements and other terms that tell the browser which HTML elements should be selected to have the CSS property values inside the rule applied to them. The element or elements which are selected by the selector are referred to as the subject of the selector.</p>
-        <img src="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/selector.png"></img>
+        <img src="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/selector.png" alt="Selector example">
       </article>     
     </section>
     <section class="main-section" id="Properties_and_values">
@@ -64,7 +63,7 @@
         <img src="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_is_structured/declaration-block.png" alt="Properties and value example 2">
         <p>Finally, CSS declaration blocks are paired with selectors to produce CSS rulesets (or CSS rules). The example below contains two rules: one for the <code>h1</code> selector and one for the <code>p</code> selector. The colored highlighting identifies the <code>h1</code> rule.</p>
         <img src="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_is_structured/rules.png" alt="Properties and value examples 3">
-        <p>Setting CSS properties to specific values is the primary way of defining layout and styling for a document. The CSS engine calculates which declarations apply to every single element of a page. <br></br> CSS properties and values are case-insensitive. The property and value in a property-value pair are separated by a colon (<code>:</code>).</p>
+        <p>Setting CSS properties to specific values is the primary way of defining layout and styling for a document. The CSS engine calculates which declarations apply to every single element of a page. <br> CSS properties and values are case-insensitive. The property and value in a property-value pair are separated by a colon (<code>:</code>).</p>
       </article>  
     </section>
     <section class="main-section" id="Function">
@@ -72,8 +71,8 @@
       <article>
         <p>While most values are relatively simple keywords or numeric values, there are some values that take the form of a function.</p>
         <p>An example would be the calc() function, which can do simple math within CSS:</p>
-        <code class="bar"> < div class="outer" >< div class="box" > The inner box is 90% - 30px.
-</code> <br></br>
+        <code class="bar">&lt;div class="outer"&gt;&lt;div class="box" &gt;The inner box is 90% - 30px.&lt;div&gt;&lt;div&gt;
+</code> <br>
         <code class="bar"> .outer {
   border: 5px solid black;
 }
@@ -93,8 +92,8 @@
         <p>CSS @rules (pronounced "at-rules") provide instruction for what CSS should perform or how it should behave. Some @rules are simple with just a keyword and a value. For example, @import imports a stylesheet into another CSS stylesheet:</p>
         <code class="bar">@import "styles2.css";</code>
         <p>One common @rule that you are likely to encounter is @media, which is used to create media queries. Media queries use conditional logic for applying CSS styling.
-        <br></br>
-In the example below, the stylesheet defines a default pink background for the <code>< body ></code> element. However, a media query follows that defines a blue background if the browser viewport is wider than 30em.</p>
+        <br>
+In the example below, the stylesheet defines a default pink background for the <code>&lt;body&gt;</code> element. However, a media query follows that defines a blue background if the browser viewport is wider than 30em.</p>
         <code class="bar">body {
   background-color: pink;
 }
@@ -245,8 +244,8 @@ div p + p {padding-top: 0;}
         <li class="nav-list"><a class="nav-link" href="#White_space">White space</a></li>
         <li class="nav-list"><a class="nav-link" href="#Reference">Reference</a></li>
       </ul>
+    </header>
     </nav>
-  </header>
   </main>
 </body>
 </html>
