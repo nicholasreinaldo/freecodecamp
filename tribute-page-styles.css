@@ -4,9 +4,6 @@
   }
 }
 
-.frame {
-  border: 10px solid #ecd7c6;
-}
 
 .canvas {
   border: 20px solid  white;
@@ -22,14 +19,14 @@ body {
   color: #1b1b32;
   font-family: Helvetica;
   margin: 0;
-  font-size: 18px
-  border: 10px sold white;
+  font-size: 18px;
+  border: 10px solid white;
 }
 
 #img-div {
   background-color: white;
   border: 20px solid #ecd7c6;
-  padding: 10px
+  padding: 10px;
 }
 
 #image {
@@ -71,4 +68,8 @@ li {
 
 #tribute-reference {
   margin-top: 40px;
+}
+
+footer {
+  text-align: center;
 }
