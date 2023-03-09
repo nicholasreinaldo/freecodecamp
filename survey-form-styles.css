@@ -1,268 +1,43 @@
-/* Sets up base background & font */
-* {
-  background-color: white;
-  font-family: helvetica, sans-serif;
-}
-
-/* Sets up top-header to be fixed & styled */
-#header {
-  height: 100px;
-  width: 100%;
-  display: flex;
-  position: fixed;
-  justify-content: space-between;
-  align-items: center;
-  top: 0px;
-  border-bottom: 4px solid #Ececec; 
-}
-
-#header-img {
-  width: 300px;
-  object-fit: contain;
-  margin: 30px;
-}
-
-#nav-bar {
-  width: 50%;
-  max-width: 300px;
-  height: 50px;
-}
-
-nav > ul {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: nowrap;
-  align-items: center;
-  margin-block: 0;
-  padding-inline-start: 0;
-  height: 100%;
-}
-
-.nav-list {
-  color: #dfdfe2;
-  margin: 0 0.2rem;
-  padding: 0.5rem;
-  display: block;
-}
-
-/* Sets up so Header Image will always fit the screen when zoomed in */
-
-@media only screen and (max-width: 550px) {
-  #header-img {
-    width: 100%;
-  } 
-}
-
-/* Sets up so Navigation button will disappear when zoomed in */
-@media only screen and (max-width: 600px) {
-  header {
-    flex-wrap: wrap;
-  }
-  header > nav {
-    display: none;
-  }
-}
-
-/*  */
-
-body {
-  margin: 0;
-}
-
-/* Sets up the registration section styles */
-
-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;  
-}
-
-.container {
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto; 
-}
-
-.info {
-  width: 200px;
-  margin: 0;
-  padding: 0;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.regis-head {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 100px;  
-}
-
-.regis-desc {
-  margin: 10px;
-}
-
-/* Input button styling */
-input[type='email'] {
-    width: 100%;
-    height: 30px;
-    margin: 15px 0;
-    padding: 5px;
-}
-
-input[type='submit'] {
-  width: 80%;
-  height: 30px;
-  margin: 15px 0;
-  font-weight: bold;
-  background-color: #00AE05;
-  color: white;
-  cursor: pointer;
-  border: 2px solid #00AE05;
-  border-radius: 5px;
-  font-size: 100%;
-}
-
-input[type='submit']:hover {
-  background-color: #00BA04;
-}
-
-/* Features section styling */
-
-.feature-section {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.feature-icon {
-  display: flex;
-  width: 30%;
-  height: 125px;
-  justify-content: center;
-}
-
-#feature-img {
-  width: 100px;
-}
-
-.feature-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 70%;
-  margin-left: 0px;
-  margin-right: 0px;
-  height: 125px;
-}
-
-/* Video styling */
-
-#video {
-  width: 600px;
-  height: 350px;
-  margin: 50px;
-}
-
-@media only screen and (max-width: 600px) {
-  #video {
-    width: 75%;
-  }
-}
-
-/* Product Pricing / Comparisons styling */
-
-#pricing {
-  align-items: flex-start;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-}
-
-.product-category {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: calc(100%/3);
-  margin: 20px;
-  border: 2px solid transparent;
-  border-radius: 8px;
-  padding: 20px;
-  background-color: #Ececec;
-}
-
-.product-class {
-  display: flex;
-  font-weight: bold;
-  text-align: left;
-  font-size: 120%;
-  margin-bottom: 15px;
-}
-
-.product-desc {
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.product-class, .product-desc, .product-features-list, .product-pointers, .product-bold, .product-features-list > ul > li {
-  background-color: #Ececec;
-}
-
-.product-features-list > ul > li {
-  margin-bottom: 10px;
-}
-
-.product-button {
-  width: 100%;
-  min-height: 40px;
-  background-color: #00AE05;
-  color: white;
-  font-weight: bold;
-  border: 2px solid transparent;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.product-button:hover {
-  background-color: #00BA04
-}
-
-@media (max-width: 600px) {
-  #pricing {
-    flex-direction: column;
-  }
-  .product-category {
-    max-width: 300px;
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-  .product-features-list {
-    display: none;
-  }
-}
-
-/* Footer styling */
-.footer-section {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-  padding: 10px;
-}
-
-.footer-buttons {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.footer-buttons > li {
-    padding: 0 10px;
-    list-style: none;
-}
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <title> Survey Kepuasan Exhibitor Comic Frontier 16 </title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Kepuasan Exhibitor Comic Frontier 16</h1>
+    <p id="description">Hai! Terima kasih sudah meluangkan waktu anda untuk membantu kami mengembangkan Comifuro</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Nama: <input id="name" type="text" required placeholder="(Boleh nama asli / nama artist)"></label>
+        <label id="email-label">E-mail: <input id="email" type="email" required placeholder="Silahkan masukkan e-mail anda)"></label>
+        <label id="number-label">Umur: <input id="number" type="number" min="13" max="100" required placeholder="Umur"></label>
+        <label id="circlename-label">Nomor & Nama Circle: <input id="circlename" type="text" required placeholder="Contoh: C-06a Arvest"></label>
+        <label for="dropdown">Sewa Booth:<select id="dropdown" name="dropdown">
+          <option value="">(Pilih jumlah booth dan durasi sewa)</option>
+          <option value="1day-2booth">1 Hari, 1 Booth</option>
+          <option value="2day-2booth">1 Hari, 2 Booth</option>    
+          <option value="2day-1booth">2 Hari, 1 Booth</option>
+          <option value="2day-2booth">2 Hari, 2 Booth</option>
+          <option value="premiumbooth">Booth Premium</option>
+        </select>
+      </label>
+      <p class="favourite"> Sudah berapa kali anda menyewa booth di Comifuro?</p>
+      <label for="1"><input id="1" type="radio" name="rating" value="rate1" class="inline"> 1 kali </label>
+      <label for="2"><input id="2" type="radio" name="rating" value="rate2" class="inline"> 2 kali </label>
+      <label for="3"><input id="3" type="radio" name="rating" value="rate2" class="inline"> Lebih dari 2 kali </label>  
+      <p class="favourite"> Apa yang anda sukai saat menyewa Booth Comifuro?</p>
+      <label for="price"><input id="price" type="checkbox" name="interest" class="inline" value="price"> Harga </label>
+      <label for="location"><input id="location" type="checkbox" name="interest" class="inline" value="location"> Lokasi </label>
+      <label for="visitors"><input id="visitors" type="checkbox" name="interest" class="inline" value="visitors"> Jumlah Pengunjung </label>
+      </fieldset>
+      <fieldset>
+      <label for="suggestion">Kritik dan Saran lainnya 
+        <textarea id="suggestion" name="suggestion" rows="3" cols="40" placeholder="(Silahkan tuliskan pendapat anda dan apa yang bisa kami kembangkan dari CF kali ini!)"></textarea>
+      </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
