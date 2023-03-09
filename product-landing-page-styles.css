@@ -1,268 +1,154 @@
-/* Sets up base background & font */
-* {
-  background-color: white;
-  font-family: helvetica, sans-serif;
-}
-
-/* Sets up top-header to be fixed & styled */
-#header {
-  height: 100px;
-  width: 100%;
-  display: flex;
-  position: fixed;
-  justify-content: space-between;
-  align-items: center;
-  top: 0px;
-  border-bottom: 4px solid #Ececec; 
-}
-
-#header-img {
-  width: 300px;
-  object-fit: contain;
-  margin: 30px;
-}
-
-#nav-bar {
-  width: 50%;
-  max-width: 300px;
-  height: 50px;
-}
-
-nav > ul {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: nowrap;
-  align-items: center;
-  margin-block: 0;
-  padding-inline-start: 0;
-  height: 100%;
-}
-
-.nav-list {
-  color: #dfdfe2;
-  margin: 0 0.2rem;
-  padding: 0.5rem;
-  display: block;
-}
-
-/* Sets up so Header Image will always fit the screen when zoomed in */
-
-@media only screen and (max-width: 550px) {
-  #header-img {
-    width: 100%;
-  } 
-}
-
-/* Sets up so Navigation button will disappear when zoomed in */
-@media only screen and (max-width: 600px) {
-  header {
-    flex-wrap: wrap;
-  }
-  header > nav {
-    display: none;
-  }
-}
-
-/*  */
-
-body {
-  margin: 0;
-}
-
-/* Sets up the registration section styles */
-
-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;  
-}
-
-.container {
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto; 
-}
-
-.info {
-  width: 200px;
-  margin: 0;
-  padding: 0;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.regis-head {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 100px;  
-}
-
-.regis-desc {
-  margin: 10px;
-}
-
-/* Input button styling */
-input[type='email'] {
-    width: 100%;
-    height: 30px;
-    margin: 15px 0;
-    padding: 5px;
-}
-
-input[type='submit'] {
-  width: 80%;
-  height: 30px;
-  margin: 15px 0;
-  font-weight: bold;
-  background-color: #00AE05;
-  color: white;
-  cursor: pointer;
-  border: 2px solid #00AE05;
-  border-radius: 5px;
-  font-size: 100%;
-}
-
-input[type='submit']:hover {
-  background-color: #00BA04;
-}
-
-/* Features section styling */
-
-.feature-section {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.feature-icon {
-  display: flex;
-  width: 30%;
-  height: 125px;
-  justify-content: center;
-}
-
-#feature-img {
-  width: 100px;
-}
-
-.feature-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 70%;
-  margin-left: 0px;
-  margin-right: 0px;
-  height: 125px;
-}
-
-/* Video styling */
-
-#video {
-  width: 600px;
-  height: 350px;
-  margin: 50px;
-}
-
-@media only screen and (max-width: 600px) {
-  #video {
-    width: 75%;
-  }
-}
-
-/* Product Pricing / Comparisons styling */
-
-#pricing {
-  align-items: flex-start;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-}
-
-.product-category {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: calc(100%/3);
-  margin: 20px;
-  border: 2px solid transparent;
-  border-radius: 8px;
-  padding: 20px;
-  background-color: #Ececec;
-}
-
-.product-class {
-  display: flex;
-  font-weight: bold;
-  text-align: left;
-  font-size: 120%;
-  margin-bottom: 15px;
-}
-
-.product-desc {
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.product-class, .product-desc, .product-features-list, .product-pointers, .product-bold, .product-features-list > ul > li {
-  background-color: #Ececec;
-}
-
-.product-features-list > ul > li {
-  margin-bottom: 10px;
-}
-
-.product-button {
-  width: 100%;
-  min-height: 40px;
-  background-color: #00AE05;
-  color: white;
-  font-weight: bold;
-  border: 2px solid transparent;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.product-button:hover {
-  background-color: #00BA04
-}
-
-@media (max-width: 600px) {
-  #pricing {
-    flex-direction: column;
-  }
-  .product-category {
-    max-width: 300px;
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-  .product-features-list {
-    display: none;
-  }
-}
-
-/* Footer styling */
-.footer-section {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-  padding: 10px;
-}
-
-.footer-buttons {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.footer-buttons > li {
-    padding: 0 10px;
-    list-style: none;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <section>
+      <header id="header">
+        <img 
+        id="header-img"
+        src="https://evernote.com/img/logo/evernote/primary.svg"
+        alt="Product Logo" 
+        loading="lazy">
+        <nav id="nav-bar">
+          <ul>
+            <li class="nav-list"><a class="nav-link" href="#features">Features</a></li>
+            <li class="nav-list"><a class="nav-link" href="#introduction">Introduction</a></li>
+            <li class="nav-list"><a class="nav-link" href="#pricing">Pricing</a></li>
+          </ul>
+        </nav>
+      </header>
+    </section>
+  <div class="container">
+    <section class="regis-head">
+      <h1>Why choose Evernote?</h1>
+        <p class="regis-desc">Evernote gives you everything you need to keep life organized—great note taking, <br>project planning, and easy ways to find what you need, when you need it.</p>
+      <div class="info">
+        <form action="https://www.freecodecamp.com/email-submit" id="form">          
+          <input id="email" type="email" name="email" placeholder="Enter your e-mail address" required>
+        <input id="submit" type="submit" value="Let's get started">
+        </form>
+      </div>
+     </section>
+    </div>
+  <div class="content">
+    <section id="features">
+      <div class="feature-section">
+        <div class="feature-icon">
+          <img class="feature-img" src="https://evernote.com/c/assets/why-evernote-refresh-2021/capture_anything.svg?7df1617e2a8a7867" alt="Capture anything">
+        </div>
+        <div class="feature-text">
+          <h1>Capture anything</h1>
+          <p>Add more than text to your notes, including photos, files and to-do lists.</p>
+        </div>
+      </div>
+      <div class="feature-section">
+        <div class="feature-icon">
+          <img class="feature-img" src="https://evernote.com/c/assets/why-evernote-refresh-2021/keep_it_together.svg?187fee193812c241" alt="Keep it together">
+        </div>
+        <div class="feature-text">
+          <h1>Keep it together</h1>
+          <p>Create a personal space for all your most important ideas and information.</p>
+        </div>
+      </div>
+      <div class="feature-section">
+        <div class="feature-icon">
+          <img class="feature-img" src ="https://evernote.com/c/assets/why-evernote-refresh-2021/find_it_fast.svg?57867fbf38cdb7ed" alt="Find it fast">
+        </div>
+        <div class="feature-text">
+          <h1>Find it fast</h1>
+          <p>Get the right note, right away with powerful search and keyword tags.</p>
+        </div>
+      </div>
+        <div class="feature-section">
+          <div class="feature-icon">
+            <img class="feature-img" src="https://evernote.com/c/assets/why-evernote-refresh-2021/take_it_anywhere.svg?a38c4457210506bc" alt="Take it anywhere">
+          </div>
+          <div class="feature-text">
+            <h1>Take it anywhere</h1>
+            <p>Sync your notes to all your devices so they stay with you, even if you’re offline.</p>
+          </div>
+        </div>           
+    </section>
+  </div>
+    <section id="introduction">
+      <iframe id="video" src="https://www.youtube.com/embed/NgkCgqIogcY">
+      </iframe>
+    </section>
+    <section id="pricing">
+      <div class="product-category">
+        <div class="product-class">FREE</div>
+        <div class="product-desc">Capture ideas and find them quickly</div>
+        <div class="product-features-list">
+          <ul class="product-pointers">
+            <li>Take great notes</li>
+            <li>Sync up to 2 devices </li>
+            <li>60 MB monthly uploads</li>
+            <li>25 MB max. note size</li>
+            <li>Get organized with Home dashboard and 3 widgets</li>
+            <li>Stay on top of it all with in-note tasks</li>
+            <li>Find things fast with search and tags</li>
+            <li>Clip web pages</li>
+            <li>Attach PDFs, receipts, files, photos, images, and documents</li>
+          </ul>
+        </div>
+        <button class="product-button">Get started</button>
+      </div>
+      <div class="product-category">
+        <div class="product-class">PERSONAL </div>
+        <div class="product-desc">Keep home and family on track</div>
+        <div class="product-features-list">
+          <ul class="product-pointers">
+            <li><b class="product-bold">EVERYTHING IN FREE, PLUS:</b></li>
+            <li>Sync unlimited devices</li>
+            <li>10 GB monthly uploads</li>
+            <li>200 MB max. note size</li>
+            <li>Customize Home dashboard and access extra widgets</li>
+            <li>Connect primary Google Calendar account</li>
+            <li>Add due dates, reminders, and notifications to your tasks</li>
+            <li>Manage tasks in one place</li>
+            <li>Get offline access on mobile and desktop</li>
+            <li>Search text inside images, docs, and PDFs</li>
+            <li>Create custom templates</li>
+            <li>Mark up images and PDFs</li>
+          </ul>
+        </div>
+        <button class="product-button">Choose Personal</button>
+      </div>
+      <div class="product-category">
+        <div class="product-class">PROFESSIONAL</div>
+        <div class="product-desc">Tackle any project, at work or at home</div>
+        <div class="product-features-list">
+          <ul class="product-pointers">
+            <li><b class="product-bold">EVERYTHING IN PERSONAL, PLUS:</b></li>
+            <li>Save 2x more content with 20 GB monthly uploads</li>
+            <li>Access to all widgets and customization for Home</li>
+            <li>Connect both personal and workplace Google Calendar accounts</li>
+            <li>Create, manage, and assign tasks to others, and easily track their progress</li>
+            <li>Use Boolean terms to refine search results</li>
+            <li>Find content by location with geographic search</li>
+            <li>Export notebooks as PDF files</li>
+            <li>Integrate with Slack, Salesforce, Microsoft Teams, and others</li>                      
+          </ul>
+        </div>
+        <button class="product-button">Choose Professional</button>
+      </div>
+    </section>
+  <footer>
+    <div class="footer-section">
+    <ul class="footer-buttons">
+      <li><a href="https://evernote.com/security">Security</a></li>
+      <li><a href="https://evernote.com/legal">Legal</a></li>
+      <li><a href="https://evernote.com/privacy">Privacy</a></li>
+    </ul>
+    <p>This page format and content is credited to <a href="https://evernote.com/compare-plans">Evernote Website</a></p>
+    </div>
+  </footer>
+  </main>
+</body>
+</html>
