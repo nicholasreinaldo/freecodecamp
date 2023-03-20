@@ -1,0 +1,311 @@
+/* Style variables the main used color palettes of the root element */
+
+:root {
+  --main-grey: #353535;
+  --darker-grey: #303030;
+  --lighter-grey: #494949;
+  --text-color: #dfdfe2;
+  --cyan: #80fceb;
+}
+
+/* Style the whole document to have no default margin and padding, set font sizes, color, and font style*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: verdana, sans-serif;
+  color: var(--text-color);
+}
+
+/* Style the whole section color */
+
+body {
+  background-color: var(--lighter-grey);
+}
+
+/* Styling section of the header and navigation bar */
+/* Styling the header navigation bar to be fixed, it's width and using flexbox*/
+header {
+  height: 80px;
+  width: 100%;
+  background-color: var(--main-grey);
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  top: 0px;
+  border-bottom: 2px solid var(--main-grey); 
+}
+
+/* Resizes Navigation bar logo to fit the container size*/
+#header-img {
+  height: 50px;
+  margin: 30px;
+  object-fit: contain;
+}
+
+/* Navigation styling section */
+
+.navbar {
+  height: 50px;
+  width: 50%;
+  max-width: 300px;
+}
+
+nav > ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.nav-list {
+  margin: 0 0.8rem;
+  padding: 0.5rem;
+  color: var(--text-color);
+  display: block;
+}
+
+.nav-list:hover {
+  background-color: #303030;
+}
+
+.nav-link {
+  text-decoration: none; 
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+/* This makes the navigation bar disappear when the screen is small */
+@media only screen and (max-width: 600px){
+  #navbar > ul {
+    display: none;
+  }
+}
+
+/* Styling section of the main webpages */
+/* Sets the top margin so it doesn't overlap by the navigation bar header */
+main {
+  margin-top: 50px;
+}
+
+/* Styling section of the main introduction text  */
+#welcome-introduction {
+  font-size: 4rem;
+}
+
+#welcome-desc {
+  font-size: 3rem;
+  margin-top: 15px;
+  color: var(--cyan);
+}
+
+#welcome-section {
+  height: 100vh;
+  background-color: #303030;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* About me styling section */
+#about {
+  width: 82%;
+  height: 50vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#about-title {
+  margin: 30px 0 10px 0;
+  padding: 10px;
+  font-size: 2rem;
+  border-bottom: 2px solid var(--text-color);
+}
+
+.about-desc {
+  margin: 20px;
+  font-weight: normal;
+}
+
+/* Latest project styling section */
+/* Project title & description */
+#project-intro {
+  margin: 0 auto;
+  max-width: 650px;
+  padding: 10px;
+  text-align: center;
+  font-size: 2rem;
+  border-bottom: 2px solid var(--text-color);
+}
+
+#project-intro-desc {
+  width: 82%;
+  margin: 0 auto;
+  padding: 30px 0 10px 0;
+  text-align: center;
+  font-weight: normal;
+}
+
+/* Project lists and preview styling */
+/* Make the total of width list so the  is not too wide */
+#projects {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.project-list {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.project-tile {
+  width: 40%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; 
+  align-items: center;
+  background-color: var(--lighter-grey);
+}
+
+/* Makes the list into a column list when using small screen */
+@media only screen and (max-width: 600px){
+  .project-list {
+    flex-direction: column;
+   
+  }
+  .project-tile {
+    width: 80%;
+  }
+}
+
+/* Project preview styling*/
+.project-preview {
+  width: 100%;
+}
+
+.project-title {
+  width: 100%;
+  display: flex;
+  background-color: var(--darker-grey);
+  text-align: center;
+}
+
+.project-title-text {
+  margin: 0 auto;
+  padding: 10px;
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.html-tag {
+  font-size: 1.2rem;
+  color: var(--darker-grey);
+  transition: color 0.3s ease-out;
+}
+
+.project-title-text:hover .html-tag {
+  color: var(--cyan);
+}
+
+/* Show all project button */
+.show-all {
+  height: 30px;
+  width: 200px;
+  background-color: var(--darker-grey);
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border: 1px solid black;
+  transition: background 0.3s ease-out;
+}
+
+.show-all:hover {
+  background-color: var(--cyan);
+}
+
+.show-all:hover .all-project-button {
+  color: var(--darker-grey);
+}
+
+.all-project-button {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* Contact styling section */
+#contact-me {
+  width: 80%;
+  height: 75vh;
+  padding: 50px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--text-color);
+  padding: 10px;
+  text-align: center;
+  color: var(--cyan);
+}
+
+.contact-desc {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Social media buttons styling section*/
+.contact-list {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-button {
+  list-style-type: none;
+}
+
+/* Button styling */
+.fa {
+  height: 50px;
+  text-decoration: none;
+  font-size: 50px;
+}
+
+.fa:hover {
+  filter: opacity(0.5);
+}
+
+/* Footer styling section */
+footer {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  border-top: 3px solid var(--darker-grey);
+  background-color: var(--main-grey);
+}
