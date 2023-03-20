@@ -47,7 +47,7 @@ header {
 
 /* Navigation styling section */
 
-.navbar {
+#navbar {
   height: 50px;
   width: 50%;
   max-width: 300px;
