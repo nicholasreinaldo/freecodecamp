@@ -12,5 +12,6 @@ CSS
 - Transforms (2D, 3D), Transition, Animation 
 - Layout Module (Flexbox & Grid)
 
+## JavaScript Algorithms and Data Structures 
 
 https://www.w3schools.com/css/default.asp
