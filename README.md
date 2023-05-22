@@ -6,7 +6,8 @@ The first course I've learned at freeCodeCamp, here I've learned about HTML & CS
 
 List of HTML Projects:
 - Personal Portfolio Webpage: A personal portfolio Webpage project which contains all of my other HTML & CSS projects.
-[PREVIEW]() - [HTML](https://github.com/nicholasreinaldo/freecodecamp/blob/main/responsive-web-design/personal-portfolio.html) - [CSS](https://github.com/nicholasreinaldo/freecodecamp/blob/main/responsive-web-design/personal-portfolio-styles.css)
+( [PREVIEW]()  [HTML](https://github.com/nicholasreinaldo/freecodecamp/blob/main/responsive-web-design/personal-portfolio.html) - [CSS](https://github.com/nicholasreinaldo/freecodecamp/blob/main/responsive-web-design/personal-portfolio-styles.css) )
+
 - Product Landing Page [PREVIEW](https://codepen.io/nicholasreinaldo/full/MWqOoRr) - [HTML](https://github.com/nicholasreinaldo/freecodecamp/blob/main/responsive-web-design/product-landing-page.html) - [CSS](https://github.com/nicholasreinaldo/freecodecamp/blob/main/responsive-web-design/product-landing-page-styles.css)
 
 
