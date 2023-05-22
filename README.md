@@ -5,7 +5,7 @@ Hi! Welcome to my Portfolio pages from FreeCodeCamp Portfolio
 The first course I've learned at freeCodeCamp, here I've learned about HTML & CSS how to make a web page look good on all devices (Desktop, Tablet & Phone).
 
 List of HTML Projects:
-- Personal Portfolio Webpage ( [PREVIEW]() - [HTML](https://github.com/nicholasreinaldo/freecodecamp/blob/main/responsive-web-design/personal-portfolio.html) - [CSS](https://github.com/nicholasreinaldo/freecodecamp/blob/main/responsive-web-design/personal-portfolio-styles.css) ): A personal portfolio Webpage project which contains all of my other HTML & CSS projects.
+- Personal Portfolio Webpage ( [PREVIEW](https://codepen.io/nicholasreinaldo/full/wvYRPmq) - [HTML](https://github.com/nicholasreinaldo/freecodecamp/blob/main/responsive-web-design/personal-portfolio.html) - [CSS](https://github.com/nicholasreinaldo/freecodecamp/blob/main/responsive-web-design/personal-portfolio-styles.css) ): A personal portfolio Webpage project which contains all of my other HTML & CSS projects.
 
 
 
