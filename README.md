@@ -30,5 +30,11 @@ List of Projects:
   - Code Links: [PREVIEW](https://codepen.io/nicholasreinaldo/full/BaOmRPM) - [HTML](https://github.com/nicholasreinaldo/freecodecamp/blob/main/responsive-web-design/survey-form.html) - [CSS](https://github.com/nicholasreinaldo/freecodecamp/blob/main/responsive-web-design/survey-form-styles.css)
 
 ## JavaScript Algorithms and Data Structures 
-I am currently learning JavaScript, projects will be updated from time to time.
+After learning HTML and CSS, I learned about JavaScript and Data Structures. So far I've learned fundamentals of JavaScript including variables, arrays, objects, loops, and functions.
+
+List of Projects:
+- **Palindrome Checker**
+  - The main feature of this code is to check a string whether it is a palindrome or not, including non-alphanumberic characters and white spaces.
+  - Code Links: [JS](https://github.com/nicholasreinaldo/freecodecamp/blob/main/js-algorithm-data-structure/palindrome-checker.js)
+
 
