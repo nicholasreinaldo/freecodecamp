@@ -40,5 +40,11 @@ List of Projects:
   - The story is to convert any given number into a roman numeral using the mentioned rules, and the answers should be provided in upper-case.
   - Code Link: [JS](https://github.com/nicholasreinaldo/freecodecamp/blob/main/js-algorithm-data-structure/roman-numerals-converter.js) 
 - **Caesars Cipher**
-  - Desc.
-  - Code Link: [JS]()
+  - Implementing the ROT13 cipher, where the values of the letters are shifted by 13 places. Thus A ↔ N, B ↔ O and so on.
+  - Code Link: [JS](https://github.com/nicholasreinaldo/freecodecamp/blob/main/js-algorithm-data-structure/caesars-cipher.js)
+ - **Phone Number Validator**
+  - The user story is they may fill out the form field any way they choose as long as it has the format of a valid US number. 
+  - Code Link: [JS](https://github.com/nicholasreinaldo/freecodecamp/blob/main/js-algorithm-data-structure/phone-num-validator.js)
+- **Cash Register**
+  - Calculating the change to be given to a customer from a cash register, considering the available currency denominations in the register.
+  - Code Link: [JS](https://github.com/nicholasreinaldo/freecodecamp/blob/main/js-algorithm-data-structure/cash-register.js)
